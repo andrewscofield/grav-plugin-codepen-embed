@@ -1,7 +1,5 @@
 # Codepen Embed Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
-
 The **Codepen Embed** Plugin is for [Grav CMS](http://github.com/getgrav/grav). You can use it to easily embed 'pens' from codepen.io right from your markdown editor.
 
 ## Installation
@@ -54,12 +52,4 @@ You can use these parameters (only id is required)
 | defaultTab  | default: js,result | What tabs should be shown by default |
 | content | default:'' | For SEO purposes you can also include content that will be removed once the pen has been embeded.  |
 
-
-## Credits
-
-**Did you incorporate third-party code? Want to thank somebody?**
-
-## To Do
-
-- [ ] Future plans, if any
 
