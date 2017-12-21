@@ -2,7 +2,7 @@
 
 **This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
 
-The **Codepen Embed** Plugin is for [Grav CMS](http://github.com/getgrav/grav). easily embed codepens from markdown
+The **Codepen Embed** Plugin is for [Grav CMS](http://github.com/getgrav/grav). You can use it to easily embed 'pens' from codepen.io right from your markdown editor.
 
 ## Installation
 
@@ -23,8 +23,9 @@ To install this plugin, just download the zip version of this repository and unz
 You should now have all the plugin files under
 
     /your/site/grav/user/plugins/codepen-embed
-	
-> NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) to operate.
+
+> NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Shortcode Core](https://github.com/getgrav/grav-plugin-shortcode-core)
+
 
 ## Configuration
 
@@ -38,7 +39,21 @@ enabled: true
 
 ## Usage
 
-**Describe how to use the plugin.**
+```markdown
+[codepen id=CODEPEN_ID]
+```
+
+You can use these parameters (only id is required)
+| Parameter | Default Value | Description |
+| ------------- | ------------- | ------------- |
+| id  | The codepen from the url. For example on this pen: https://codepen.io/akm2/pen/rHIsa the id would be rHIsa |
+| user  | required, no default |Include the pen user in the markup  |
+| title  | default: '' | Include the codepen  |
+| preview  | default: true. | Show preview of the pen once embedded |
+| height  | default: 265 | Height of the pen embed  |
+| defaultTab  | default: js,result | What tabs should be shown by default |
+| content | default:'' | For SEO purposes you can also include content that will be removed once the pen has been embeded.  |
+
 
 ## Credits
 

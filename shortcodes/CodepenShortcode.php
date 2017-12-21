@@ -17,7 +17,7 @@ class CodepenShortcode extends Shortcode{
             $defaultTab = $sc->getParameter('defaultTab', 'js,result');
             
             $output = $this->twig->processTemplate('partials/codepen.html.twig', [
-                'slug' => $id,
+                'id' => $id,
                 'user' => $user,
                 'title' => $title,
                 'preview' => $preview,
